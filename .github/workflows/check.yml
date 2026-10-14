@@ -21,7 +21,10 @@ jobs:
       - name: Style
         run: brew style andrecamm/tap
 
+      # The online audit calls the GitHub API, which rate-limits anonymous
+      # requests from shared runners.
       - name: Audit
         env:
           HOMEBREW_NO_INSTALL_FROM_API: 1
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: brew audit --cask --strict --online --tap andrecamm/tap
