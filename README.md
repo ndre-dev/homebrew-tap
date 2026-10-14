@@ -1,11 +1,11 @@
-# AndreCamm Homebrew tap
+# ndre-dev Homebrew tap
 
 Homebrew casks for my small macOS tools.
 
 | Cask | What it does | Install |
 |---|---|---|
-| [Trickle](https://github.com/AndreCamm/Trickle) | Shows live charging wattage in the menu bar | `brew install andrecamm/tap/trickle` |
-| [Unghost](https://github.com/AndreCamm/Unghost) | Clears extra Claude icons from the Dock | `brew install andrecamm/tap/unghost` |
+| [Trickle](https://github.com/ndre-dev/Trickle) | Shows live charging wattage in the menu bar | `brew install ndre-dev/tap/trickle` |
+| [Unghost](https://github.com/ndre-dev/Unghost) | Clears extra Claude icons from the Dock | `brew install ndre-dev/tap/unghost` |
 
 ## Install
 
@@ -23,7 +23,7 @@ Notarised releases will replace this step. You can read the source of each app a
 
 ## How the casks stay current
 
-Each app's release workflow updates its cask when a new version is tagged. `brew livecheck andrecamm/tap/trickle` reports the latest release if a cask falls behind.
+Each app's release workflow updates its cask when a new version is tagged. `brew livecheck ndre-dev/tap/trickle` reports the latest release if a cask falls behind.
 
 ## License
 

@@ -2,10 +2,10 @@ cask "unghost" do
   version "1.1.0"
   sha256 "ceaa4a2f1f2d501d27cd80682cff1d56d709807471ba4a06bce03542190e048a"
 
-  url "https://github.com/AndreCamm/Unghost/releases/download/v#{version}/Unghost.zip"
+  url "https://github.com/ndre-dev/Unghost/releases/download/v#{version}/Unghost.zip"
   name "Unghost"
   desc "Menu bar app that clears extra Claude icons from the Dock"
-  homepage "https://github.com/AndreCamm/Unghost"
+  homepage "https://github.com/ndre-dev/Unghost"
 
   livecheck do
     url :url
@@ -30,7 +30,7 @@ cask "unghost" do
     Unghost clears the extra icons already in the Dock. To stop new ones
     appearing, install the guard from the source repository:
 
-      git clone https://github.com/AndreCamm/Unghost.git
+      git clone https://github.com/ndre-dev/Unghost.git
       python3 Unghost/guard/patch.py --install
 
     Keep the cloned folder. The guard's login item runs from it.

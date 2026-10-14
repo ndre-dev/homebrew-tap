@@ -2,10 +2,10 @@ cask "trickle" do
   version "1.3.0"
   sha256 "88bbe13e7abcaac8e7603bdda9b1a3bfca7fa64b513101e1aa345868d2b65eda"
 
-  url "https://github.com/AndreCamm/Trickle/releases/download/v#{version}/Trickle.zip"
+  url "https://github.com/ndre-dev/Trickle/releases/download/v#{version}/Trickle.zip"
   name "Trickle"
   desc "Menu bar app that shows live charging wattage"
-  homepage "https://github.com/AndreCamm/Trickle"
+  homepage "https://github.com/ndre-dev/Trickle"
 
   livecheck do
     url :url

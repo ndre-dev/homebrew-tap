@@ -13,13 +13,13 @@ jobs:
 
       - name: Add this checkout as the tap
         run: |
-          tap="$(brew --repository)/Library/Taps/andrecamm/homebrew-tap"
+          tap="$(brew --repository)/Library/Taps/ndre-dev/homebrew-tap"
           mkdir -p "$(dirname "$tap")"
           ln -s "$GITHUB_WORKSPACE" "$tap"
-          brew trust --tap andrecamm/tap
+          brew trust --tap ndre-dev/tap
 
       - name: Style
-        run: brew style andrecamm/tap
+        run: brew style ndre-dev/tap
 
       # The online audit calls the GitHub API, which rate-limits anonymous
       # requests from shared runners.
@@ -27,4 +27,4 @@ jobs:
         env:
           HOMEBREW_NO_INSTALL_FROM_API: 1
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: brew audit --cask --strict --online --tap andrecamm/tap
+        run: brew audit --cask --strict --online --tap ndre-dev/tap
