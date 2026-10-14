@@ -1,0 +1,27 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add this checkout as the tap
+        run: |
+          tap="$(brew --repository)/Library/Taps/andrecamm/homebrew-tap"
+          mkdir -p "$(dirname "$tap")"
+          ln -s "$GITHUB_WORKSPACE" "$tap"
+          brew trust --tap andrecamm/tap
+
+      - name: Style
+        run: brew style andrecamm/tap
+
+      - name: Audit
+        env:
+          HOMEBREW_NO_INSTALL_FROM_API: 1
+        run: brew audit --cask --strict --online --tap andrecamm/tap
