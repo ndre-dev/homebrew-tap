@@ -5,7 +5,7 @@ cask "unghost" do
   url "https://github.com/ndre-dev/Unghost/releases/download/v#{version}/Unghost.zip"
   name "Unghost"
   desc "Menu bar app that clears extra Claude icons from the Dock"
-  homepage "https://github.com/ndre-dev/Unghost"
+  homepage "https://ndre.dev/unghost"
 
   livecheck do
     url :url

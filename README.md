@@ -4,8 +4,8 @@ Homebrew casks for my small macOS tools.
 
 | Cask | What it does | Install |
 |---|---|---|
-| [Trickle](https://github.com/ndre-dev/Trickle) | Shows live charging wattage in the menu bar | `brew install ndre-dev/tap/trickle` |
-| [Unghost](https://github.com/ndre-dev/Unghost) | Clears extra Claude icons from the Dock | `brew install ndre-dev/tap/unghost` |
+| [Trickle](https://ndre.dev/trickle) | Shows live charging wattage in the menu bar | `brew install ndre-dev/tap/trickle` |
+| [Unghost](https://ndre.dev/unghost) | Clears extra Claude icons from the Dock | `brew install ndre-dev/tap/unghost` |
 
 ## Install
 

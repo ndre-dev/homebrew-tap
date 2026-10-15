@@ -5,7 +5,7 @@ cask "trickle" do
   url "https://github.com/ndre-dev/Trickle/releases/download/v#{version}/Trickle.zip"
   name "Trickle"
   desc "Menu bar app that shows live charging wattage"
-  homepage "https://github.com/ndre-dev/Trickle"
+  homepage "https://ndre.dev/trickle"
 
   livecheck do
     url :url
